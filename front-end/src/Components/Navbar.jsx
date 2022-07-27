@@ -53,20 +53,20 @@ export const Navbar = () => {
             </List>
             <Divider />
             <List>
-                <Link to="/login">
+                {!token?<Link to="/login">
                     <ListItemButton>
                         <ListItemIcon>
                             <LoginIcon />
                         </ListItemIcon>
                         <ListItemText primary="Login" />
                     </ListItemButton>
-                </Link>
-                <ListItemButton>
+                </Link>: ""}
+                {token?<ListItemButton>
                     <ListItemIcon>
                         <LogoutIcon />
                     </ListItemIcon>
                     <ListItemText onClick={()=>{dispatch(logoutSuccess())}} primary="Logout" />
-                </ListItemButton>
+                </ListItemButton>: ""}
             </List>
         </Box>
     );
