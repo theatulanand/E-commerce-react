@@ -18,6 +18,8 @@ import { Link } from "react-router-dom"
 import { useSelector, useDispatch } from 'react-redux';
 import { logoutSuccess } from '../Redux/Auth/actions';
 import LogoutIcon from '@mui/icons-material/Logout';
+import FoodBankIcon from '@mui/icons-material/FoodBank';
+import LocalPharmacyIcon from '@mui/icons-material/LocalPharmacy';
 
 export const Navbar = () => {
 
@@ -48,6 +50,22 @@ export const Navbar = () => {
                     <ListItemButton>
                         <ListItemIcon><HomeIcon /></ListItemIcon>
                         <ListItemText primary="Home" />
+                    </ListItemButton>
+                </Link>
+            </List>
+            <List>
+                <Link to="/grocery">
+                    <ListItemButton>
+                        <ListItemIcon><FoodBankIcon /></ListItemIcon>
+                        <ListItemText primary="Grocery" />
+                    </ListItemButton>
+                </Link>
+            </List>
+            <List>
+                <Link to="/pharmacy">
+                    <ListItemButton>
+                        <ListItemIcon><LocalPharmacyIcon /></ListItemIcon>
+                        <ListItemText primary="Pharmacy" />
                     </ListItemButton>
                 </Link>
             </List>
