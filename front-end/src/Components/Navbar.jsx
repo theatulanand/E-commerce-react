@@ -104,7 +104,7 @@ export const Navbar = () => {
                         <MenuIcon  />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        E-Commerce
+                        <Link to="/" > E-Commerce </Link>
                     </Typography>
                     {token ? <Button color="inherit" onClick={() => { dispatch(logoutSuccess()) }}>Logout<LogoutIcon/></Button> : <Link to="/login"><Button color="inherit">  Login  <LoginIcon /></Button></Link>}
                 </Toolbar>
