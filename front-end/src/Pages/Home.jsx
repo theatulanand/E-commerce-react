@@ -38,7 +38,6 @@ export const Home = () => {
     }).then((res) => {
       setProducts(res.data);
       setLoading(false);
-      //console.log(products)
     }).catch((err) => {
       console.log(err);
       setLoading(false)
