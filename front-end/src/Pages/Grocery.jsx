@@ -34,7 +34,7 @@ export const Grocery = () => {
     console.log(sort);
     axios({
       method: "get",
-      url: `http://localhost:3001/products?_page=${page}&_limit=12&_sort=price&_order=${sort}&category_like=grocery`
+      url: `http://localhost:3001/products?_page=${page}&_limit=12&_sort=price&_order=${value}&category_like=grocery`
     }).then((res) => {
       setProducts(res.data);
       setLoading(false);
@@ -60,8 +60,8 @@ export const Grocery = () => {
                 label="Age"
                 onChange={(e) => {handleSort(e.target.value)}}
               >
-                <MenuItem value={"asc"}>High To Low</MenuItem>
-                <MenuItem value={"desc"}>Low To High</MenuItem>
+                <MenuItem value={"asc"}>Low To High</MenuItem>
+                <MenuItem value={"desc"}>High To Low</MenuItem>
               </Select>
             </FormControl>
           </div>
