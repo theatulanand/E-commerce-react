@@ -20,6 +20,8 @@ import { logoutSuccess } from '../Redux/Auth/actions';
 import LogoutIcon from '@mui/icons-material/Logout';
 import FoodBankIcon from '@mui/icons-material/FoodBank';
 import LocalPharmacyIcon from '@mui/icons-material/LocalPharmacy';
+import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import HistoryIcon from '@mui/icons-material/History';
 
 export const Navbar = () => {
 
@@ -69,22 +71,38 @@ export const Navbar = () => {
                     </ListItemButton>
                 </Link>
             </List>
+            <List>
+                <Link to="/cart">
+                    <ListItemButton>
+                        <ListItemIcon><ShoppingCartIcon /></ListItemIcon>
+                        <ListItemText primary="Cart" />
+                    </ListItemButton>
+                </Link>
+            </List>
+            <List>
+                <Link to="/orders">
+                    <ListItemButton>
+                        <ListItemIcon><HistoryIcon /></ListItemIcon>
+                        <ListItemText primary="Order History" />
+                    </ListItemButton>
+                </Link>
+            </List>
             <Divider />
             <List>
-                {!token?<Link to="/login">
+                {!token ? <Link to="/login">
                     <ListItemButton>
                         <ListItemIcon>
                             <LoginIcon />
                         </ListItemIcon>
                         <ListItemText primary="Login" />
                     </ListItemButton>
-                </Link>: ""}
-                {token?<ListItemButton>
+                </Link> : ""}
+                {token ? <ListItemButton>
                     <ListItemIcon>
                         <LogoutIcon />
                     </ListItemIcon>
-                    <ListItemText onClick={()=>{dispatch(logoutSuccess())}} primary="Logout" />
-                </ListItemButton>: ""}
+                    <ListItemText onClick={() => { dispatch(logoutSuccess()) }} primary="Logout" />
+                </ListItemButton> : ""}
             </List>
         </Box>
     );
@@ -101,12 +119,20 @@ export const Navbar = () => {
                         sx={{ mr: 2 }}
                         onClick={toggleDrawer("left", true)}
                     >
-                        <MenuIcon  />
+                        <MenuIcon />
                     </IconButton>
                     <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
                         <Link to="/" > E-Commerce </Link>
                     </Typography>
-                    {token ? <Button color="inherit" onClick={() => { dispatch(logoutSuccess()) }}>Logout<LogoutIcon/></Button> : <Link to="/login"><Button color="inherit">  Login  <LoginIcon /></Button></Link>}
+                    {token ? <>
+                        <Link to="/"><Button color="inherit" >home</Button></Link>
+                        <Link to="/pharmacy"><Button color="inherit" >pharmacy</Button></Link>
+                        <Link to="/grocery"><Button color="inherit" >grocery</Button></Link>
+                        <Link to="/cart"><Button color="inherit" >Cart</Button></Link>
+                        <Link to ="/orders" ><Button color="inherit" >Orders</Button></Link>
+                        <Button color="inherit" onClick={() => { dispatch(logoutSuccess()) }}>Logout<LogoutIcon /></Button>
+                    </>
+                        : <Link to="/login"><Button color="inherit">  Login  <LoginIcon /></Button></Link>}
                 </Toolbar>
             </AppBar>
             <div>

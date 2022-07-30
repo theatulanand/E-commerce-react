@@ -37,9 +37,6 @@ export const ProductDetails = () => {
         })
     }
 
-    
-
-
     useEffect(() => {
         axios({
             method: 'get',
