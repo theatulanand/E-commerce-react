@@ -1104,7 +1104,25 @@
   "cart": [],
   "orders": [
     {
-      "time": "Sat Jul 30 2022 14:12:54 GMT+0530 (India Standard Time)",
+      "time": "Sun Jul 31 2022 09:21:53 GMT+0530 (India Standard Time)",
+      "items": [
+        {
+          "id": 3,
+          "title": "Bread - Pumpernickel",
+          "color": "Khaki",
+          "price": 2653,
+          "description": "mauris eget massa tempor convallis nulla neque libero convallis eget eleifend luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis",
+          "rating": 4.8,
+          "category": "grocery",
+          "hex": "#2b1669",
+          "imageBase": "https://via.placeholder.com/500",
+          "count": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "time": "Sun Jul 31 2022 09:31:45 GMT+0530 (India Standard Time)",
       "items": [
         {
           "id": 2,
@@ -1116,106 +1134,34 @@
           "category": "grocery",
           "hex": "#177e20",
           "imageBase": "https://via.placeholder.com/500",
-          "count": 2
+          "count": 4
         },
         {
-          "id": 53,
-          "title": "ATORVASTATIN CALCIUM",
-          "color": "Turquoise",
-          "price": 767,
-          "description": "faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce posuere felis sed lacus",
+          "id": 7,
+          "title": "Tandoori Curry Paste",
+          "color": "Puce",
+          "price": 1602,
+          "description": "iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec",
+          "rating": 4,
+          "category": "grocery",
+          "hex": "#e1944a",
+          "imageBase": "https://via.placeholder.com/500",
+          "count": 7
+        },
+        {
+          "id": 66,
+          "title": "Ethyl Alcohol",
+          "color": "Pink",
+          "price": 209,
+          "description": "adipiscing lorem vitae mattis nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec",
           "rating": 1.5,
           "category": "pharmacy",
-          "hex": "#4542a4",
+          "hex": "#b2e344",
           "imageBase": "https://via.placeholder.com/500",
-          "count": 1
-        }
-      ],
-      "id": 1
-    },
-    {
-      "time": "Sat Jul 30 2022 14:14:37 GMT+0530 (India Standard Time)",
-      "items": [
-        {
-          "id": 1,
-          "title": "Chilli Paste, Sambal Oelek",
-          "color": "Blue",
-          "price": 2133,
-          "description": "nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla",
-          "rating": 2,
-          "category": "grocery",
-          "hex": "#12b8d9",
-          "imageBase": "https://via.placeholder.com/500",
-          "count": 2
+          "count": 5
         }
       ],
       "id": 2
-    },
-    {
-      "time": "Sat Jul 30 2022 14:15:26 GMT+0530 (India Standard Time)",
-      "items": [
-        {
-          "id": 1,
-          "title": "Chilli Paste, Sambal Oelek",
-          "color": "Blue",
-          "price": 2133,
-          "description": "nam dui proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam ultrices libero non mattis pulvinar nulla pede ullamcorper augue a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla",
-          "rating": 2,
-          "category": "grocery",
-          "hex": "#12b8d9",
-          "imageBase": "https://via.placeholder.com/500",
-          "count": 1
-        }
-      ],
-      "id": 3
-    },
-    {
-      "time": "Sat Jul 30 2022 14:17:46 GMT+0530 (India Standard Time)",
-      "items": [
-        {
-          "id": 12,
-          "title": "Longos - Chicken Caeser Salad",
-          "color": "Red",
-          "price": 842,
-          "description": "aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque viverra pede ac diam cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna",
-          "rating": 3.4,
-          "category": "grocery",
-          "hex": "#50d84d",
-          "imageBase": "https://via.placeholder.com/500",
-          "count": 2
-        },
-        {
-          "id": 60,
-          "title": "RHODOTORULA RUBRA",
-          "color": "Fuscia",
-          "price": 500,
-          "description": "nibh ligula nec sem duis aliquam convallis nunc proin at turpis a pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien non mi integer ac",
-          "rating": 1.5,
-          "category": "pharmacy",
-          "hex": "#beaf25",
-          "imageBase": "https://via.placeholder.com/500",
-          "count": 1
-        }
-      ],
-      "id": 4
-    },
-    {
-      "time": "Sat Jul 30 2022 14:22:39 GMT+0530 (India Standard Time)",
-      "items": [
-        {
-          "id": 52,
-          "title": "Avobenzone, Octinoxate, Octisalate, Oxybenzone",
-          "color": "Purple",
-          "price": 371,
-          "description": "magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit amet justo morbi",
-          "rating": 2.6,
-          "category": "pharmacy",
-          "hex": "#a082a8",
-          "imageBase": "https://via.placeholder.com/500",
-          "count": 4
-        }
-      ],
-      "id": 5
     }
   ]
 }

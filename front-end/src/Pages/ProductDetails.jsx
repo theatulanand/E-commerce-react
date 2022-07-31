@@ -30,7 +30,7 @@ export const ProductDetails = () => {
     }
 
     const getCount = () =>{
-        axios.get(`http://localhost:3001/cart/${productId}`).then((res) => {
+        axios.get(`https://e-com-fake-server.herokuapp.com/cart/${productId}`).then((res) => {
             setCount(res.data.count);
         }).catch((err) =>{
             console.log(err)
@@ -40,7 +40,7 @@ export const ProductDetails = () => {
     useEffect(() => {
         axios({
             method: 'get',
-            url: `http://localhost:3001/products/${productId}`
+            url: `https://e-com-fake-server.herokuapp.com/products/${productId}`
         }).then((res) => {
             setProduct(res.data);
             if(isItemInCart()){
@@ -55,7 +55,7 @@ export const ProductDetails = () => {
         dispatch(cartLoading());
         axios({
             method: 'post',
-            url: 'http://localhost:3001/cart',
+            url: 'https://e-com-fake-server.herokuapp.com/cart',
             data: { ...product, count: 1 }
         }).then((res) => {
             dispatch(addCart());
@@ -72,7 +72,7 @@ export const ProductDetails = () => {
         dispatch(cartLoading());
         axios({
             method: 'patch',
-            url: `http://localhost:3001/cart/${productId}`,
+            url: `https://e-com-fake-server.herokuapp.com/cart/${productId}`,
             data: { ...product, count: count + 1 }
         }).then((res) => {
             dispatch(addCart());
@@ -87,7 +87,7 @@ export const ProductDetails = () => {
 
     const decItemInCart = () => {
         if(count === 1) {
-            axios.delete(`http://localhost:3001/cart/${productId}`).then((res) => {
+            axios.delete(`https://e-com-fake-server.herokuapp.com/cart/${productId}`).then((res) => {
                 dispatch(getCartItem())
             })
             return
@@ -96,7 +96,7 @@ export const ProductDetails = () => {
         dispatch(cartLoading());
         axios({
             method: 'patch',
-            url: `http://localhost:3001/cart/${productId}`,
+            url: `https://e-com-fake-server.herokuapp.com/cart/${productId}`,
             data: { ...product, count: count - 1 }
         }).then((res) => {
             dispatch(addCart());

@@ -6,7 +6,7 @@ export const Orders = () => {
   const [orders, setOrders] = useState([])
 
   const getData = () => {
-    axios.get(`http://localhost:3001/orders`).then((res) => { setOrders(res.data) });
+    axios.get(`https://e-com-fake-server.herokuapp.com/orders`).then((res) => { setOrders(res.data) });
   }
 
 

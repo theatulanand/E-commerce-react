@@ -22,7 +22,7 @@ export const Cart = () => {
         dispatch(cartLoading());
         axios({
             method: 'patch',
-            url: `http://localhost:3001/cart/${product.id}`,
+            url: `https://e-com-fake-server.herokuapp.com/cart/${product.id}`,
             data: { ...product, count: product.count + 1 }
         }).then((res) => {
             dispatch(addCart());
@@ -36,7 +36,7 @@ export const Cart = () => {
 
     const decItemInCart = (product) => {
         if (product.count === 1) {
-            axios.delete(`http://localhost:3001/cart/${product.id}`).then((res) => {
+            axios.delete(`https://e-com-fake-server.herokuapp.com/cart/${product.id}`).then((res) => {
                 dispatch(getCartItem())
             })
             return
@@ -45,7 +45,7 @@ export const Cart = () => {
         dispatch(cartLoading());
         axios({
             method: 'patch',
-            url: `http://localhost:3001/cart/${product.id}`,
+            url: `https://e-com-fake-server.herokuapp.com/cart/${product.id}`,
             data: { ...product, count: product.count - 1 }
         }).then((res) => {
             dispatch(addCart());
@@ -58,7 +58,7 @@ export const Cart = () => {
 
     const clearCart = () => {
         products.forEach((el) => {
-            axios.delete(`http://localhost:3001/cart/${el.id}`).then(() => {
+            axios.delete(`https://e-com-fake-server.herokuapp.com/cart/${el.id}`).then(() => {
                 dispatch(getCartItem())
             })
         })
@@ -69,7 +69,7 @@ export const Cart = () => {
 
         axios({
             method: "post",
-            url: "http://localhost:3001/orders",
+            url: "https://e-com-fake-server.herokuapp.com/orders",
             data: {
                 time: Date(Date.now()).toString(),
                 items: products

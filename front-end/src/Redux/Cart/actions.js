@@ -54,7 +54,7 @@ export const getCartItem = () => (dispatch) =>{
     dispatch(cartLoading())
     axios({
         method: "get",
-        url : "http://localhost:3001/cart"
+        url : "https://e-com-fake-server.herokuapp.com/cart"
     }).then((res) =>{
         dispatch(getCart(res.data))
     }).catch((err) =>{

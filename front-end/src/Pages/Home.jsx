@@ -16,7 +16,7 @@ export const Home = () => {
     setLoading(true);
     axios({
       method: "get",
-      url: `http://localhost:3001/products?_page=${page}&_limit=12`
+      url: `https://e-com-fake-server.herokuapp.com/products?_page=${page}&_limit=12`
     }).then((res) => {
       setProducts(res.data);
       setLoading(false);
@@ -34,7 +34,7 @@ export const Home = () => {
     console.log(sort);
     axios({
       method: "get",
-      url: `http://localhost:3001/products?_page=${page}&_limit=12&_sort=price&_order=${value}`
+      url: `https://e-com-fake-server.herokuapp.com/products?_page=${page}&_limit=12&_sort=price&_order=${value}`
     }).then((res) => {
       setProducts(res.data);
       setLoading(false);
